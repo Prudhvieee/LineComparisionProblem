@@ -33,13 +33,17 @@ namespace LineComparisionProblem
                 }
             }
             //To check the equality of the lines
-            if (lineLength1 == lineLength2)
+            if (lineLength1 > lineLength2)
+            {
+                Console.WriteLine("The Line1 is greater than Line2");
+            }
+            else if (lineLength1 == lineLength2)
             {
                 Console.WriteLine("The Lines are Equal");
             }
             else
             {
-                Console.WriteLine("The lines are not Equal!");
+                Console.WriteLine("The Line2 is Greater than Line1!");
             }
         }
     }
